@@ -11,13 +11,13 @@ public class TestDemo {
 		String status = us.getStaus();
 		String response = "";
 		for (int i = 1; i <= 10; i++) {
-			response = us.getResponse("usd", 1);
+			response = us.getResponse("usd");
 		}
 		
 		System.out.println("Status is: " + status);
 		System.out.println("Response from server is: " + response);
 
-		/* 
+		 
 		//method to set service available or not 
 		DownStreamService.setServiceAvailable(0);
 
@@ -25,8 +25,8 @@ public class TestDemo {
 		DownStreamService.setServiceRunning(0);
 
 		status = us.getStaus();
-		response = us.getResponse("test", 1);
+		response = us.getResponse("test");
 		System.out.println("Status is: " + status);
-		System.out.println("Response from server is: " + response);*/
+		System.out.println("Response from server is: " + response);
 	}
 }

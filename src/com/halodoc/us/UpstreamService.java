@@ -13,7 +13,7 @@ public class UpstreamService {
 		return circuitBreaker.getCircuitStatus();
 	}
 
-	public String getResponse(String gateway, int t) throws InterruptedException {
-		return circuitBreaker.getResponse(gateway, t);
+	public String getResponse(String gateway) throws InterruptedException {
+		return circuitBreaker.getResponse(gateway);
 	}
 }
